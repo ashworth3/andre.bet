@@ -31,12 +31,6 @@
 
 ---
 
-## 🖼️ Preview
-
-![andre.bet home](public/images/site-home.png)
-
----
-
 ## 👨‍💻 Author
 
 Designed and developed by **Andre Ashworth**  
