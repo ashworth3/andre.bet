@@ -242,4 +242,32 @@
   <div id="coin-modal" class="modal hidden">
     <div class="modal-content">
       <span class="close-button" id="close-modal">&times;</span>
-  
+      <h2 id="modal-title">Coin Name</h2>
+      <p><strong>Price:</strong> <span id="modal-price"></span></p>
+      <p><strong>24h Change:</strong> <span id="modal-change"></span></p>
+      <p><strong>Market Cap:</strong> <span id="modal-cap"></span></p>
+      <p><strong>Total Volume:</strong> <span id="modal-volume"></span></p>
+    </div>
+  </div>  
+
+  <img id="doge" src="images/important.png"
+  alt="Doge"
+  style="display: none; position: fixed; top: 50%; left: -200px; width: 150px; z-index: 1000;"/>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inline">
+    <p class="footer-credit">
+      🚀 Built by Andre <span class="footer-divider">|</span> © 2025 <a href="index.html">andre.bet</a>
+    </p>
+  </div>
+</footer>
+    
+      <script src="scripts/script.js"></script>
+      <script src="scripts/ticker.js" defer></script>
+      <script src="scripts/fng.js"></script>
+      <script src="scripts/indicators.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>AOS.init({ duration: 1000, once: true });</script>
+    </body>
+</html>
