@@ -22,7 +22,7 @@ Built and designed by [Andre](https://github.com/ashworth3)
 - **Frontend**: HTML5, CSS3, JavaScript
 - **APIs & Data**: CoinGecko API, TradingView API, Coindesk API, Node.js Proxy (Render)
 - **UI Libraries**: Chart.js, AOS Library, FontAwesome
-- **Deployment**: Firebase, GitHub
+- **Deployment**: Firebase, Git
 
 ---
 
