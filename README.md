@@ -22,13 +22,19 @@ Built and designed by [Andre](https://github.com/ashworth3)
 - **Frontend**: HTML5, CSS3, JavaScript
 - **APIs & Data**: CoinGecko API, TradingView API, Coindesk API, Node.js Proxy (Render)
 - **UI Libraries**: Chart.js, AOS Library, FontAwesome
-- **Deployment**: Firebase, Git
+- **Deployment**: Firebase
 
 ---
 
 ## 🔗 Live Site
 
 🌐 [https://andre.bet](https://andre.bet)
+
+---
+
+## 🖼️ Preview
+
+![andre.bet home](public/images/site-home.png)
 
 ---
 
