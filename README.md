@@ -1,7 +1,6 @@
 # andre.bet — Real-Time Crypto Tracker
 
 [andre.bet](https://andre.bet) is a fast, minimalist crypto dashboard built for real-time price tracking, market insights, and clean design.
-Built and designed by [Andre](https://github.com/ashworth3)
 
 ---
 
@@ -40,5 +39,5 @@ Built and designed by [Andre](https://github.com/ashworth3)
 
 ## 👨‍💻 Author
 
-Created by **Andre**  
-[GitHub](https://github.com/ashworth3)
+Designed and developed by **Andre Ashworth**  
+🔗 [github.com/ashworth3](https://github.com/ashworth3)
