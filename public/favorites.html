@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favorites – andre.bet</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="light-bg">
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-left">
+      <a href="index.html" class="site-title">andre.bet</a>
+    </div>
+  
+    <div class="nav-center">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="fearandgreed.html">Fear & Greed</a>
+        <a href="news.html">News</a>
+      </div>
+    </div>
+  
+    <!-- Right side indicators -->
+    <div class="nav-right">
+      <div class="indicator-card">
+        <span class="indicator-label">F&G</span>
+        <span id="nav-fng" class="indicator-value">--</span>
+      </div>
+      <div class="indicator-card">
+        <span class="indicator-label">MCap</span>
+        <span id="nav-mcap" class="indicator-value">--</span>
+      </div>
+    </div>
+  </nav>  
+
+<!-- Favorites Section -->
+<section class="container" id="favorite-coins" data-aos="fade-up">
+  <div class="favorites-box">
+    <h2 class="section-title">Favorited Coins</h2>
+    
+    <table class="crypto-table">
+      <thead>
+        <tr>
+          <th>Coin</th>
+          <th>Price</th>
+          <th>1h</th>
+          <th>24h</th>
+          <th>7d</th>
+          <th>30d</th>
+        </tr>
+      </thead>
+      <tbody id="favorites-table-body">
+        <!-- Populated dynamically through JS Chart -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inline">
+    <p class="footer-credit">
+      🚀 Built by Andre <span class="footer-divider">|</span> © 2025 <a href="index.html">andre.bet</a>
+    </p>
+  </div>
+</footer>
+
+  <!-- Modal -->
+  <div id="coin-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button" id="close-modal">&times;</span>
+      <h2 id="modal-title">Coin Name</h2>
+      <p><strong>Price:</strong> <span id="modal-price"></span></p>
+      <p><strong>24h Change:</strong> <span id="modal-change"></span></p>
+      <p><strong>Market Cap:</strong> <span id="modal-cap"></span></p>
+      <p><strong>Total Volume:</strong> <span id="modal-volume"></span></p>
+    </div>
+  </div>
+  
+    <!-- Scripts -->
+    <script src="scripts/indicators.js"></script>
+    <script src="scripts/favorites.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>  
+  </body>
+</html>

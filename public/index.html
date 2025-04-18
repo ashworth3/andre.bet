@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Tracker - andre.bet</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Track real-time cryptocurrency prices with andre.bet – a sleek, fast crypto tracker built for clarity and speed." />
+  <meta name="keywords" content="crypto, cryptocurrency, bitcoin, ethereum, market, tracker, andre.bet, real-time prices" />
+  <meta name="author" content="Andre Ashworth" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Crypto Tracker - andre.bet" />
+  <meta property="og:description" content="A minimal, real-time crypto tracker designed for clarity and speed." />
+  <meta property="og:image" content="images/important.png" />
+  <meta property="og:url" content="https://andre.bet" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Crypto Tracker - andre.bet" />
+  <meta name="twitter:description" content="A sleek, fast crypto tracker made by Andre Ashworth." />
+  <meta name="twitter:image" content="images/important.png" />
+
+  <!-- Your Existing Tags -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="light-bg">
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-left">
+      <a href="index.html" class="site-title">andre.bet</a>
+    </div>
+  
+    <div class="nav-center">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="fearandgreed.html">Fear & Greed</a>
+        <a href="news.html">News</a>
+      </div>
+    </div>
+  
+    <!-- Right side indicators -->
+    <div class="nav-right">
+      <div class="indicator-card">
+        <span class="indicator-label">F&G</span>
+        <span id="nav-fng" class="indicator-value">--</span>
+      </div>
+      <div class="indicator-card">
+        <span class="indicator-label">MCap</span>
+        <span id="nav-mcap" class="indicator-value">--</span>
+      </div>
+    </div>
+  </nav>  
+
+<!-- Ticker Section -->
+<section class="ticker">
+  <div class="ticker-container">
+    <div id="crypto-ticker" class="ticker-wrapper">
+      <div id="ticker-content" class="ticker-content"></div>
+    </div>    
+  </div>
+</section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <img src="images/candlesticks.png" alt="Crypto Hero Banner" class="hero-image" />
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Track the Crypto Market</h1>
+      <p>A minimal, real-time crypto tracker designed for clarity and speed.</p>
+      <a href="#top-coins" class="cta-button">See Top Coins</a>
+    </div>
+  </section>
+
+<!-- About Section -->
+<section class="container">
+  <div class="info-box" data-aos="fade-up">
+    <h2 class="section-title">About</h2>
+    <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem; line-height: 1.7;">
+      I’m a computer scientist and crypto enthusiast who 
+      built this site to make tracking digital assets 
+      simple, fast, and actually enjoyable. 
+      Powered by JavaScript, APIs, and a custom frontend, 
+      it delivers real-time price tracking and 
+      an intuitive way to follow your favorite coins. 
+      Enjoy the tools, stay curious, and track smarter.
+    </p>
+    <p style="text-align:center; margin-top: 20px; font-size: 0.95rem;">
+      Built with 
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" style="text-decoration: none;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="20" style="vertical-align: middle; margin: 0 4px;" />
+      </a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" style="text-decoration: none;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="20" style="vertical-align: middle; margin: 0 4px;" />
+      </a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" style="text-decoration: none;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="20" style="vertical-align: middle; margin: 0 4px;" />
+      </a>
+      <a href="https://nodejs.org/" target="_blank" style="text-decoration: none;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="20" style="vertical-align: middle; margin: 0 4px;" />
+      </a>
+      <a href="https://expressjs.com/" target="_blank" style="text-decoration: none;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" width="20" style="vertical-align: middle; margin: 0 4px;" />
+      </a>
+      <a href="https://www.chartjs.org/" target="_blank" style="text-decoration: none;">
+        <img src="images/chartjs.svg" alt="Chart.js" width="20" style="vertical-align: middle; margin: 0 4px;" />
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- Section DIVIDER -->
+<div class="section-divider"></div>
+
+<!-- Live Market -->
+<section class="container" id="market-snapshot" data-aos="fade-up">
+  <div class="info-box market-box">
+    <h2 class="section-title">Live Market</h2>
+    <div class="tradingview-widget-container">
+      <div id="tv-medium-widget"></div>
+      <script src="https://s3.tradingview.com/tv.js"></script>
+      <script>
+        new TradingView.MediumWidget({
+          container_id: "tv-medium-widget",
+          symbols: [
+            ["BTC", "COINBASE:BTCUSD|12m"],
+            ["ETH", "COINBASE:ETHUSD|12m"],
+            ["SOL", "BINANCE:SOLUSD|12m"],
+            ["XRP", "BINANCE:XRPUSD|12m"],
+            ["LTC", "BINANCE:LTCUSD|12m"]
+          ],
+          greyText: "Quotes by",
+          width: "100%",
+          height: "400",
+          locale: "en"
+        });
+      </script>
+    </div>
+  </div>
+</section>
+
+<!-- Section DIVIDER -->
+<div class="section-divider"></div>
+
+<!-- Market Overview Section -->
+<section class="market-overview container" data-aos="fade-up">
+
+  <div class="market-boxes">
+
+    <!-- Market Volatility -->
+    <div class="volatility-box" id="volatility-trigger">
+      <h2 class="section-title">Market Volatility</h2>
+      <p class="volatility-label hover-reveal">Loading volatility data...</p>
+    </div>
+
+    <!-- Fear & Greed Index -->
+    <div id="fng-box" class="fng-box" style="position: relative; padding-bottom: 50px;">
+      <h2 class="section-title">Fear & Greed Index</h2>
+      <p class="fng-label fear hover-reveal">Loading...</p>
+      <div class="fng-learn-more">
+        <a class="cta-button" href="fearandgreed.html">View More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Section DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- Daily Gainers & Losers -->
+  <section class="container" id="daily-movers" data-aos="fade-up">
+    <div class="info-box">
+      <h2 class="section-title">Top Gainers & Losers (24h)</h2>
+      <div class="gainers-losers-grid">
+        <div class="gainers">
+          <h3>Top Gainers</h3>
+          <ul id="top-gainers"></ul>
+        </div>
+        <div class="losers">
+          <h3>Top Losers</h3>
+          <ul id="top-losers"></ul>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Section DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- Coin Table -->
+  <section class="container" id="top-coins">
+    <div class="info-box" style="position: relative; padding-bottom: 50px;">
+    <h2 class="section-title" data-aos="fade-up">Top Cryptocurrencies</h2>
+    <table data-aos="fade-up">
+      <thead>
+        <tr>
+          <th>Coin</th>
+          <th>Price</th>
+          <th>1h</th>
+          <th>24h</th>
+          <th>7d</th>
+          <th>30d</th>
+        </tr>
+      </thead>
+      <tbody id="crypto-table-body"></tbody>
+    </table>
+    <div class="view-more-container" data-aos="fade-up">
+      <button id="toggle-button" class="cta-button">View More Coins</button>
+    </div>
+  </div>
+  </section>
+
+   <!-- Volatility Modal -->
+<div id="volatility-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-button" id="close-volatility-modal">&times;</span>
+    <h2>Understanding Market Volatility</h2>
+    <p><strong>What is Volatility?</strong><br>
+      Market volatility reflects how much a coin’s price fluctuates over a given period. 
+      High volatility indicates sharp price swings, while low volatility suggests more stable, consistent pricing.
+    </p>
+    <p><strong>How the Score Works:</strong><br>
+      The volatility score (out of 100) is based on recent 24h and 7d price movements across top cryptocurrencies. 
+      <br><br>
+      <span style="font-weight:bold;">🔥 💥 🌋 🚨 70–100:</span> High volatility (riskier, potential for big gains or losses)<br>
+      <span style="font-weight:bold;">🌪️ 🌊 ⛅ 🌀 40–69:</span> Moderate volatility (some movement)<br>
+      <span style="font-weight:bold;">🧘 😴 🛌 🪨 0–39:</span> Low volatility (stable, safer)</p>
+  </div>
+</div>
+
+
+  <!-- Modal -->
+  <div id="coin-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button" id="close-modal">&times;</span>
+      <h2 id="modal-title">Coin Name</h2>
+      <p><strong>Price:</strong> <span id="modal-price"></span></p>
+      <p><strong>24h Change:</strong> <span id="modal-change"></span></p>
+      <p><strong>Market Cap:</strong> <span id="modal-cap"></span></p>
+      <p><strong>Total Volume:</strong> <span id="modal-volume"></span></p>
+    </div>
+  </div>  
+
+  <img id="doge" src="images/important.png"
+  alt="Doge"
+  style="display: none; position: fixed; top: 50%; left: -200px; width: 150px; z-index: 1000;"/>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inline">
+    <p class="footer-credit">
+      🚀 Built by Andre <span class="footer-divider">|</span> © 2025 <a href="index.html">andre.bet</a>
+    </p>
+  </div>
+</footer>
+    
+      <script src="scripts/script.js"></script>
+      <script src="scripts/ticker.js" defer></script>
+      <script src="scripts/fng.js"></script>
+      <script src="scripts/indicators.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>AOS.init({ duration: 1000, once: true });</script>
+    </body>
+</html>
