@@ -18,7 +18,7 @@
 
 ## How It's Made:
 
-<p align="center">
+<p>
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
     <img src="https://skillicons.dev/icons?i=html" />
   </a>
