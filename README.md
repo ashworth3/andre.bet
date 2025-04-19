@@ -29,7 +29,7 @@
     <img src="https://skillicons.dev/icons?i=js" />
   </a>
   <a href="https://www.chartjs.org/">
-    <img src="public/images/chartjs.svg" />
+    <img src="public/images/chartjs.svg" width="48" height="48" />
   </a>
   <a href="https://nodejs.org/">
     <img src="https://skillicons.dev/icons?i=nodejs" />
