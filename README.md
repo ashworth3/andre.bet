@@ -18,29 +18,29 @@
 
 ## How It's Made:
 
-<div class="tech-stack" style="text-align: center;">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" style="text-decoration:none;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="40" title="HTML5" />
+<p align="center">
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+    <img src="https://skillicons.dev/icons?i=html" />
   </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" style="text-decoration:none;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40" title="CSS3" />
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+    <img src="https://skillicons.dev/icons?i=css" />
   </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" style="text-decoration:none;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" title="JavaScript" />
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+    <img src="https://skillicons.dev/icons?i=js" />
   </a>
-  <a href="https://nodejs.org/" target="_blank" style="text-decoration:none;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="40" title="Node.js" />
+  <a href="https://www.chartjs.org/">
+    <img src="https://skillicons.dev/icons?i=chartjs" />
   </a>
-  <a href="https://expressjs.com/" target="_blank" style="text-decoration:none;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" width="40" title="Express" />
+  <a href="https://nodejs.org/">
+    <img src="https://skillicons.dev/icons?i=nodejs" />
   </a>
-  <a href="https://firebase.google.com/" target="_blank" style="text-decoration:none;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" width="40" title="Firebase" />
+  <a href="https://expressjs.com/">
+    <img src="https://skillicons.dev/icons?i=express" />
   </a>
-  <a href="https://www.chartjs.org/" target="_blank" style="text-decoration:none;">
-    <img src="public/images/chartjs.svg" alt="Chart.js" width="40" title="Chart.js" />
+  <a href="https://firebase.google.com/">
+    <img src="https://skillicons.dev/icons?i=firebase" />
   </a>
-</div>
+</p>
 
 ---
 
