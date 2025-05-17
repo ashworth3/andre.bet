@@ -52,5 +52,4 @@
 
 ## 👨‍💻 Author
 
-Designed and developed by **Andre Ashworth**  
 🔗 [github.com/ashworth3](https://github.com/ashworth3)
