@@ -4,15 +4,15 @@
 
 ---
 
-## 🌟 Features
+## Features
 
-- 🕒 **Real-Time Top Cryptocurrencies** — Live prices, % changes, and 30-day trends
-- ⭐ **Favorite Coins** — Save and view your personal crypto watchlist
-- 😨 **Fear & Greed Index** — Sentiment scores with historical Chart.js visualization
-- 🌊 **Volatility Meter** — Daily volatility score with interactive explanation modal
-- 📰 **Crypto News Feed** — Curated recent headlines with clean cards
-- 📈 **Gainers & Losers Tracker** — 24h biggest movers displayed side-by-side
-- 📱 **Responsive Design** — Optimized for desktop and mobile browsing
+- **Real-Time Top Cryptocurrencies** — Live prices, % changes, and 30-day trends
+- **Favorite Coins** — Save and view your personal crypto watchlist
+- **Fear & Greed Index** — Sentiment scores with historical Chart.js visualization
+- **Volatility Meter** — Daily volatility score with interactive explanation modal
+- **Crypto News Feed** — Curated recent headlines with clean cards
+- **Gainers & Losers Tracker** — 24h biggest movers displayed side-by-side
+- **Responsive Design** — Optimized for desktop and mobile browsing
 
 ---
 
@@ -50,6 +50,6 @@
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 🔗 [github.com/ashworth3](https://github.com/ashworth3)
