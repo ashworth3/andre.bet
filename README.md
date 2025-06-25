@@ -1,6 +1,6 @@
-# 🌐 andre.bet — Real-Time Crypto Tracker
+# andre.bet — Crypto Tracker
 
-[andre.bet](https://andre.bet) is a fast, minimalist crypto dashboard built for real-time price tracking, market insights, and clean design.
+[andre.bet](https://andre.bet) is a minimalist crypto dashboard built for price tracking and market insights.
 
 ---
 
@@ -44,12 +44,10 @@
 
 ---
 
-## 🔗 Live Site
+## Live Site
 
 🌐 [https://andre.bet](https://andre.bet)
 
 ---
 
-## Author
-
-🔗 [github.com/ashworth3](https://github.com/ashworth3)
+[github.com/ashworth3](https://github.com/ashworth3)
