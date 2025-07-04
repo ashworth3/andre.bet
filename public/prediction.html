@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price Prediction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-600">andre.bet</a>
+            <div class="flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="favorites.html" class="text-gray-600 hover:text-blue-600">Favorites</a>
+                <a href="fearandgreed.html" class="text-gray-600 hover:text-blue-600">Fear & Greed</a>
+                <a href="news.html" class="text-gray-600 hover:text-blue-600">News</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">Bitcoin Price Prediction</h1>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+            <canvas id="priceChart" class="mb-6"></canvas>
+            <p class="text-lg font-semibold text-gray-800" id="predictedPrice">Loading prediction...</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">© 2025 <a href="index.html" class="text-blue-400 hover:underline">andre.bet</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="static/js/chart.js"></script>
+    <script>
+        fetch("/predict")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("predictedPrice").innerHTML = `
+                    Current Price: $${data.current_price.toFixed(2)}<br>
+                    Predicted Price: $${data.predicted_price.toFixed(2)}
+                `;
+            })
+            .catch(error => {
+                console.error("Error fetching prediction:", error);
+                document.getElementById("predictedPrice").innerHTML = "<span class='text-red-500'>Error loading prediction.</span>";
+            });
+    </script>
+</body>
+</html>

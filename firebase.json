@@ -26,9 +26,13 @@
           "destination": "/news.html"
         },
         {
+          "source": "/predict",
+          "function": "api"
+        },
+        {
           "source": "**",
           "destination": "/404.html"
         }
       ]
     }
-  }  
+  }
