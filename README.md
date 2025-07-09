@@ -50,4 +50,8 @@
 
 ---
 
+For this project:
+[github.com/ashworth3/andre-news-proxy](https://github.com/ashworth3/andre-news-proxy)
+
+Me:
 [github.com/ashworth3](https://github.com/ashworth3)
